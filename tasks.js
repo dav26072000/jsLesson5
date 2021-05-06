@@ -15,5 +15,18 @@ let redundant = (str) => {
   return getStr;
 };
 
-const f1 = redundant("apple");
-console.log(f1());
+// const f1 = redundant("apple");
+// console.log(f1());
+
+//3. Write a function thatreturns an anonymous function, which transforms its input by adding a particular
+// suffix at the end.
+
+let add_suffix = (suf) => {
+  let getStr = (str) => {
+    return str + suf;
+  };
+  return getStr;
+};
+
+// const add_ly = add_suffix("ly");
+// console.log(add_ly("hope"));
