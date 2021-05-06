@@ -59,3 +59,17 @@ let removeLessThanThree = (arr) => {
   });
   return newArr;
 };
+
+//7. Given an array. Determine whether it consists only from uniques or not.
+
+let returnIfUniq = (arr) => {
+  let unique = new Set(arr);
+  if (arr.length === unique.size) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+//8. Determine if a word or phrase is an isogram. An isogram (also known as a "non pattern word") is a word
+// or phrase without a repeating letter.
