@@ -14,7 +14,6 @@ let redundant = (str) => {
   };
   return getStr;
 };
-
 // const f1 = redundant("apple");
 // console.log(f1());
 
@@ -30,3 +29,16 @@ let add_suffix = (suf) => {
 
 // const add_ly = add_suffix("ly");
 // console.log(add_ly("hope"));
+
+//4.Create a function printAfter that calls its argument after printing hello world
+
+let printAfter = (str) => {
+  let printBefore = () => {
+    console.log("hello world");
+    return str;
+  };
+  return printBefore;
+};
+
+let pA = printAfter("bob");
+console.log(pA());
