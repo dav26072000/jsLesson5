@@ -97,4 +97,27 @@ let quadraticOfEven = (arr) => {
   });
   console.log(sumOfNum);
 };
-quadraticOfOdd([1, 2, 5, 8, 6, 9, 16, 36]);
+
+//10.Check whether string is palindrome, or not.
+
+let checkPalindrome = (str) => {
+  console.log(str);
+  arr = str.split("");
+  arr1 = str.split("");
+  let arr2 = arr.reverse();
+  function arrayEquals(arr1, arr2) {
+    return (
+      Array.isArray(arr1) &&
+      Array.isArray(arr2) &&
+      arr1.length === arr2.length &&
+      arr1.every((val, index) => val === arr2[index])
+    );
+  }
+  if (arrayEquals(arr1, arr2)) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+};
+
+checkPalindrome("bob");
