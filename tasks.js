@@ -120,4 +120,13 @@ let checkPalindrome = (str) => {
   }
 };
 
-checkPalindrome("bob");
+// 11. Given an array of integers, find the pair of adjacent elements that has the largest product and return that
+// product.
+
+let maxPairCount = (arr) => {
+  arr.sort(function (a, b) {
+    return b - a;
+  });
+  return arr[0] + arr[1];
+};
+console.log(maxPairCount([2, 5, 6, 7]));
