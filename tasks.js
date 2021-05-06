@@ -47,3 +47,15 @@ let filterFalsyValues = (arr) => {
   });
   return newArr;
 };
+
+// 6. Write a function which remove elements with length <= 3
+
+let removeLessThanThree = (arr) => {
+  let newArr = [];
+  arr.forEach((el) => {
+    if (el.length > 3) {
+      newArr.push(el);
+    }
+  });
+  return newArr;
+};
