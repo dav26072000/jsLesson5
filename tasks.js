@@ -31,14 +31,15 @@ let add_suffix = (suf) => {
 // console.log(add_ly("hope"));
 
 //4.Create a function printAfter that calls its argument after printing hello world
-
-let printAfter = (str) => {
-  let printBefore = () => {
-    console.log("hello world");
-    return str;
-  };
-  return printBefore;
+let printBefore = () => {
+  console.log("my str");
 };
 
-let pA = printAfter("bob");
-console.log(pA());
+let printAfter = (func) => {
+  console.log("hello wordld");
+  return func;
+};
+let f1 = printAfter(printBefore);
+f1();
+
+// 5.Write a function that implements filtering in array
