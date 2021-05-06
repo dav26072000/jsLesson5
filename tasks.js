@@ -124,9 +124,13 @@ let checkPalindrome = (str) => {
 // product.
 
 let maxPairCount = (arr) => {
-  arr.sort(function (a, b) {
-    return b - a;
-  });
-  return arr[0] + arr[1];
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i + 1]) {
+      newArr.push(arr[i] * arr[i + 1]);
+    }
+  }
+
+  return Math.max(...newArr);
 };
 console.log(maxPairCount([2, 5, 6, 7]));
