@@ -83,3 +83,18 @@ let isogram = (str) => {
     return false;
   }
 };
+
+//9. Given an array of numbers. Find the sum of numbers quadratic which are even.
+let quadraticOfEven = (arr) => {
+  let newArr = [];
+  arr.forEach((el) => {
+    if (Math.sqrt(el) % 2 === 0) {
+      newArr.push(el);
+    }
+  });
+  let sumOfNum = newArr.reduce((a, b) => {
+    return a + b;
+  });
+  console.log(sumOfNum);
+};
+quadraticOfOdd([1, 2, 5, 8, 6, 9, 16, 36]);
